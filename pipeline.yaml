@@ -6,8 +6,8 @@ spec:
   description: | 
     This pipeline clones a git repo, then echoes the README file to the stout.
   params:
-  - name: https://github.com/krmoonright/tekton-cicd.git
-    type: string
+  - name: repo-url
+    type: https://github.com/krmoonright/tekton-cicd.git
     description: The git repo URL to clone from.
   workspaces:
   - name: shared-data
